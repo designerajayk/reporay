@@ -40,13 +40,256 @@
                   </a>
                 </div>
               </div>
+              <div class="col-sm-7 col-xs-12 text-right">
+                <ul class="top-nav">
+                  <li>
+                    <a id="ragister" href="#loginModal" data-toggle="modal">Signup</a>
+                  </li>
+                  <li>
+                    <a id="login" href="#loginModal" data-toggle="modal">Login</a>
+                  </li>
+                </ul>
+              </div>
               </div>
             </div>
         </div>
     </header>
+    <nav class="navbar navbar-default top-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <strong>Roaming</strong>dil
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+        </div>
+      </div>
+    </nav>
+<section class="slider-col">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="slider-content">
+          <h1>Create Your Kind of Holiday With Roaming Dil</h1>
+          <ul>
+            <li>Customize your Holiday Plan</li>
+            <li>Customize your Holiday Plan</li>
+            <li>Customize your Holiday Plan</li>
+          </ul>
+          <button type="button" class="btn btn-primary btn-lg">
+            Let's Plan Your Trip
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+<form>
+  <div class="search-col">
+    <div class="text-center">
+      <h2>Welcome</h2>
+    </div>
+  <div class="form-group">
+    <label for="">Select my destination</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+    <input id="" type="text" class="form-control" name="" placeholder="">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="">Duration</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-fw fa-clock-o"></i></span>
+      <select class="form-control" id="">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="">Month of Travel</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-fw fa-calendar"></i></span>
+      <select class="form-control" id="">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+  </div>
+  <div class="form-group text-right">
+    <button type="button" class="btn btn-warning">
+  EXPLORE
+    </button>
+  </div>
+  </div>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- login Modal -->
+<div class="modal fade login in" id="loginModal" aria-hidden="false">
+		      <div class="modal-dialog login animated">
+    		      <div class="modal-content">
+    		         <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Login with</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box">
+                             <div class="content">
+                                <div class="social">
+                                    <a class="circle github" href="#">
+                                        <i class="fa fa-github fa-fw"></i>
+                                    </a>
+                                    <a id="google_login" class="circle google" href="#">
+                                        <i class="fa fa-google-plus fa-fw"></i>
+                                    </a>
+                                    <a id="facebook_login" class="circle facebook" href="#">
+                                        <i class="fa fa-facebook fa-fw"></i>
+                                    </a>
+                                </div>
+                                <div class="division">
+                                    <div class="line l"></div>
+                                      <span>or</span>
+                                    <div class="line r"></div>
+                                </div>
+                                <div class="error"></div>
+                                <div class="form loginBox" style="display: block;">
+                                    <form method="" action="" accept-charset="UTF-8">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    </form>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="box">
+                            <div class="content registerBox" style="display: none;">
+                             <div class="form">
+                                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="forgot login-footer" style="display: block;">
+                            <span>Looking to
+                                 <a id="pop-ragister">create an account</a>
+                            ?</span>
+                        </div>
+                        <div class="forgot register-footer" style="display: none;">
+                             <span>Already have an account?</span>
+                             <a id="pop-login">Login</a>
+                        </div>
+                    </div>
+    		      </div>
+		      </div>
+		  </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  $("#login, #pop-login").click(function() {
+    openLoginModal()
+  })
+  $("#ragister, #pop-ragister").click(function() {
+    openRegisterModal()
+  })
+});
+function showRegisterForm(){
+  $('.loginBox').fadeOut('fast',function(){
+      $('.registerBox').fadeIn('fast');
+      $('.login-footer').fadeOut('fast',function(){
+          $('.register-footer').fadeIn('fast');
+      });
+      $('.modal-title').html('Register with');
+  });
+  $('.error').removeClass('alert alert-danger').html('');
+
+}
+function showLoginForm(){
+  $('#loginModal .registerBox').fadeOut('fast',function(){
+      $('.loginBox').fadeIn('fast');
+      $('.register-footer').fadeOut('fast',function(){
+          $('.login-footer').fadeIn('fast');
+      });
+
+      $('.modal-title').html('Login with');
+  });
+   $('.error').removeClass('alert alert-danger').html('');
+}
+
+function openLoginModal(){
+  showLoginForm();
+  setTimeout(function(){
+      $('#loginModal').modal('show');
+  }, 230);
+
+}
+function openRegisterModal(){
+  showRegisterForm();
+  setTimeout(function(){
+      $('#loginModal').modal('show');
+  }, 230);
+
+}
+
+function loginAjax(){
+  /*   Remove this comments when moving to server
+  $.post( "/login", function( data ) {
+          if(data == 1){
+              window.location.replace("/home");
+          } else {
+               shakeModal();
+          }
+      });
+  */
+
+/*   Simulate error message from the server   */
+   shakeModal();
+}
+
+function shakeModal(){
+  $('#loginModal .modal-dialog').addClass('shake');
+           $('.error').addClass('alert alert-danger').html("Invalid email/password combination");
+           $('input[type="password"]').val('');
+           setTimeout( function(){
+              $('#loginModal .modal-dialog').removeClass('shake');
+  }, 1000 );
+}
+
+
+    </script>
 </body>
 
 </html>
